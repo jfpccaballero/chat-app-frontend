@@ -1,0 +1,190 @@
+   body, html { height: 100%; }
+   body {
+        background-color: hsl(270, 20%, 96%);
+        font-family: "Rubik";
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    body, main, .price, .write, .top { align-items: center; }
+    main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 0;
+    }
+    footer {position: absolute; bottom: 0;}
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(264, 100%, 61%); }
+    .avatar {
+        border: 3px solid #fff;
+        border-radius: 100%;
+        float: left;
+        width: 32px;
+    }
+    .bg-left, .bg-right { 
+        height: 90%;
+        width: 40rem;
+        position: absolute;
+    }
+    .bg-left {
+        background-image: linear-gradient(hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+        top: 0;
+        left: -15%;
+        border-radius: 0 0 50% 50%;
+    }
+    .bg-right {
+        background-color: hsla(275, 81%, 89%, 0.24);
+        border-radius: 50% 50% 0 0;
+        bottom: 0;
+        right: -15%;
+    }
+    .booking { 
+        position: relative;
+        width: 60%; }
+    .booking h1 { 
+        color: hsl(271, 36%, 24%);
+        font-weight: 600;
+    }
+    .booking p { color: hsl(270, 7%, 64%);}
+    .circle {
+        width: 1rem;
+        height: 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.486);
+        border-radius: 100%;
+    }
+    .dog-photo { 
+        border-radius: 0.5rem;
+        margin: 0.5rem;
+        width: 58px;
+    }
+    .inside-chat {display: grid; height: 30rem;}
+    .left {
+        background-color: hsla(264, 100%, 61%, 0.322);
+        color: hsl(276, 55%, 52%);
+        justify-self: left;
+        border-radius: 15px 15px 15px 5px;
+    }
+    .message { 
+        max-width: 50%;
+        margin: 0.25rem 0.5rem;
+        padding: 0 0.5rem;
+    }
+    .pictures { 
+        display: flex; 
+        mix-blend-mode: darken;
+    }
+    .phone { 
+        background-color: hsl(270, 20%, 96%);
+        border: 8px solid #fff;
+        border-radius: 25px;
+        position: relative; 
+        display: grid;
+        justify-self: right;
+        font-size: 11px;
+        overflow: hidden;
+        margin: 0 15%;
+        width: 20rem;
+    }
+    .phone h1, .phone h2 { margin: 0; }
+    .price {
+        background-image: linear-gradient(to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+        color: hsl(270, 20%, 96%);
+        display: grid;
+        grid-template-columns: 10% auto auto;
+        margin: 0.25rem 0.5rem;
+        padding: 0 0.5rem;
+        width: 75%;
+    }
+    .price h1 { justify-self: right;}
+    .right, .white-top, .write { background-color: #fff; }
+    .right {
+        border-radius: 15px 15px 5px;
+        color: hsl(271, 36%, 24%);
+        justify-self: right;
+    }
+    .top {
+        background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+        border-radius: 0 0 5px 5px;
+        color: hsl(270, 20%, 96%);
+        display: grid;
+        grid-template-columns: 5% 15% auto 5%;
+        padding: 2rem 0.5rem 1rem;
+    }
+    .top h2 { font-weight: 500;}
+    .top p {
+        color: hsl(276, 100%, 81%);
+        margin: 0;
+    }
+    .white-top { 
+        width: 50%;
+        height: 1.5rem;
+        position: absolute;
+        justify-self: center;
+        border-radius: 0 0 25px 25px ;
+    } 
+    .write {
+        border-radius: 25px;
+        color: hsl(206, 6%, 79%);
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 0.5rem;
+        padding: 0 0.5rem;
+    }
+    .write i {text-align: right; color: hsl(271, 36%, 24%);}
+
+    @media screen and (max-width: 992px) {
+        .booking {width: 90%;}
+        .bg-left { transform: translateX(-40%); }
+        .bg-right { transform: translateX(40%); }
+    }
+    @media screen and (max-width: 840px) {
+        body, html { height: auto;}
+        .bg-left, .bg-right { height: 60%; }
+        .bg-left { transform: translateX(-50%); }
+        .bg-right { transform: translateX(50%); }
+        main { 
+            display: block;
+            padding: 5%;
+        }
+        .booking {width: 100%; text-align: center; }
+        .phone {margin: 4rem auto;}
+    }
+    
+    @keyframes sendMessage{
+        to {visibility: visible;}
+    }
+    .message1 {
+        visibility: hidden;
+        animation: 0s linear 1s forwards sendMessage ;
+    }
+    .message2 {
+        visibility: hidden;
+        animation: 0s linear 2s forwards sendMessage ;
+    }
+    .message3 {
+        visibility: hidden;
+        animation: 0s linear 3.5s forwards sendMessage ;
+    }
+    .message4 {
+        visibility: hidden;
+        animation: 0s linear 4.5s forwards sendMessage ;
+    }
+    .message5 {
+        visibility: hidden;
+        animation: 0s linear 5.5s forwards sendMessage ;
+    }
+    .message6 {
+        visibility: hidden;
+        animation: 0s linear 7.5s forwards sendMessage ;
+    }
+    .message7 {
+        visibility: hidden;
+        animation: 0s linear 8.5s forwards sendMessage ;
+    }
+    .message8 {
+        visibility: hidden;
+        animation: 0s linear 9.5s forwards sendMessage ;
+    }
